@@ -17,8 +17,7 @@ public class Car {
     @Column (name = "series")
     private int series;
 
-    @OneToOne(mappedBy = "car")
-    @JoinColumn(name = "user_id")
+    @OneToOne(mappedBy = "user_car")
     private User user;
 
     public Car() {
@@ -31,7 +30,6 @@ public class Car {
     }
 
 
-    @Id
     public Long getId() {
         return id;
     }
