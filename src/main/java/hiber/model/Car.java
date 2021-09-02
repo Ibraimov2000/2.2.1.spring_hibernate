@@ -17,7 +17,7 @@ public class Car {
     @Column (name = "series")
     private int series;
 
-    @OneToOne(mappedBy = "user_car", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
     private User user;
 
     public Car() {
