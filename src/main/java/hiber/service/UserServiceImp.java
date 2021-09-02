@@ -27,7 +27,7 @@ public class UserServiceImp implements UserService {
    }
 
    public User getUserWithCar(String model, int series) {
-      return userDao.getUserWithCar(model, series);
+      return userDao.getUserForCar(model, series);
    }
 
 }
